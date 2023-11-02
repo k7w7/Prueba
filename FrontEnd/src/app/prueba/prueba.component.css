@@ -1,0 +1,13 @@
+.contenedor{
+    margin: 0 auto;
+    padding: 30px;
+}
+.selects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+.selects .boton{
+    grid-auto-columns: minmax(100px);
+    grid-column: 4/4;
+}

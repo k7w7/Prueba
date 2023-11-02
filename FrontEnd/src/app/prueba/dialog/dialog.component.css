@@ -1,0 +1,19 @@
+h1{
+    margin: 20px;
+}
+.contenedor{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+
+.selects{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px
+}
+h3{
+    margin: 0;
+}

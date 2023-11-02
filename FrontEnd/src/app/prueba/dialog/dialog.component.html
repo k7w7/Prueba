@@ -1,0 +1,74 @@
+<h1>Registrar Usuario</h1>
+<hr width=100%><br>
+<form class="example-form">
+    <div class="selects">
+        <div *ngIf="(c.length == 0) && (d.length == 0); else Select">
+          <p>Cargando...</p>
+        </div>
+        <ng-template #Select>
+         <div>
+            <h3 for="">Departamento:</h3>
+            <mat-form-field class="select">
+                <mat-label>Seleccione un departamento</mat-label>
+                <mat-select disableRipple >
+                  <mat-option *ngFor="let element of c"> {{element.nombre}} </mat-option>
+                </mat-select>
+              </mat-form-field>
+         </div>
+      
+          <div>
+            <h3 for="">Cargo:</h3>
+            <mat-form-field class="select">
+                <mat-label>Seleccione un cargo</mat-label>
+                <mat-select disableRipple >
+                <mat-option *ngFor="let element of d"> {{element.nombre}} </mat-option>
+                </mat-select>
+            </mat-form-field>
+          </div>
+        </ng-template>
+    </div>
+
+    <div class="contenedor">
+
+        <div>
+            <h3>Usuario</h3>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field> 
+        </div>
+        
+        <div>
+            <h3>Primer Nombre</h3>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field> 
+        </div>
+       
+       <div>
+            <h3> Segundo Nomnbre</h3>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field> 
+       </div>
+
+       <div>
+            <h3> Primer Apellido</h3>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field> 
+        </div>
+        <div>
+            <h3> Segundo Apellido</h3>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field> 
+        </div>
+    </div>
+        <hr width=100%><br>
+        <div mat-dialog-actions>
+            <button mat-raised-button color="primary" mat-dialog-close>Registrar</button>
+            <button mat-button mat-dialog-close cdkFocusInitial>Cancelar</button>
+        </div>
+</form>
+  
+  

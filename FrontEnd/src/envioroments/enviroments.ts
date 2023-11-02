@@ -1,0 +1,1 @@
+export const enviroments = { URL: "https://localhost:7008/"};
