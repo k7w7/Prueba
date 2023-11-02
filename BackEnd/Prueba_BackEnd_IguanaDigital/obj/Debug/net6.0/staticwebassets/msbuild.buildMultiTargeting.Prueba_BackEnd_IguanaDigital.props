@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Prueba_BackEnd_IguanaDigital.props" />
+</Project>
